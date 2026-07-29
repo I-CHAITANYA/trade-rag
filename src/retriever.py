@@ -4,14 +4,11 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 
 
-# Path where FAISS index is stored
-
-VECTORSTORE_PATH = "vectorstore/faiss_index"
-
-
-# Embedding model
-EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"
-
+from config import (
+    VECTORSTORE_PATH,
+    EMBEDDING_MODEL,
+    TOP_K_RESULTS
+)
 
 
 def load_vectorstore():

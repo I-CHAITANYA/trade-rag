@@ -1,4 +1,6 @@
 import os
+import sys
+
 
 from langchain_community.document_loaders import PyMuPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -6,17 +8,15 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-# Paths
-
-DATA_PATH = "data"
-VECTORSTORE_PATH = "vectorstore/faiss_index"
-
-
-# Embedding model
-
-EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"
-
+from config import (
+    DATA_PATH,
+    VECTORSTORE_PATH,
+    EMBEDDING_MODEL,
+    CHUNK_SIZE,
+    CHUNK_OVERLAP
+)
 
 
 def load_documents(data_path):
