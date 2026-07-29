@@ -1,3 +1,7 @@
+# Add to requirements.txt
+openai
+tqdm
+streamlit
 langchain
 langchain-community
 langchain-huggingface
@@ -5,8 +9,3 @@ faiss-cpu
 sentence-transformers
 pymupdf
 python-dotenv
-streamlit
-openai
-tqdm
-numpy
-pandas
