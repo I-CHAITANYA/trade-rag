@@ -1,0 +1,31 @@
+trade-rag/
+│
+├── app.py                  # Streamlit UI
+├── requirements.txt
+├── README.md
+│
+├── data/
+│   ├── trading_basics/
+│   │    ├── rsi.pdf
+│   │    ├── macd.pdf
+│   │    ├── candlestick.pdf
+│   │    └── risk_management.pdf
+│   │
+│   └── strategies/
+│        ├── swing_trading.pdf
+│        └── momentum.pdf
+│
+├── src/
+│   │
+│   ├── ingest.py            # Load + chunk + embed documents
+│   │
+│   ├── retriever.py         # Search documents
+│   │
+│   ├── llm.py               # Generate answer
+│   │
+│   └── utils.py
+│
+├── vectorstore/
+│     └── faiss_index/
+│
+└── config.py
