@@ -5,3 +5,8 @@ faiss-cpu
 sentence-transformers
 pymupdf
 python-dotenv
+streamlit
+openai
+tqdm
+numpy
+pandas
